@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculatrice Scientifique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="toggle-theme">🌙 Mode sombre</button>
+  </div>
+  <div class="calculator">
+    <input type="text" id="display" disabled placeholder="0" />
+
+    <div class="buttons">
+      <button data-action="clear">C</button>
+      <button data-action="back">⌫</button>
+      <button data-action="sqrt">√</button>
+      <button data-action="/">÷</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-action="*">×</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-action="-">−</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-action="+">+</button>
+
+      <button data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button data-action="^">x²</button>
+      <button data-action="=">=</button>
+
+      <button data-action="pi">π</button>
+      <button data-action="inv">1/x</button>
+      <button data-action="%">%</button>
+    </div>
+  </div>
+  <!-- ✅ Bloc Historique -->
+    <div class="history">
+      <h2>Historique</h2>
+      <ul id="history-list"></ul>
+      <button id="clear-history">🗑 Effacer l’historique</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
